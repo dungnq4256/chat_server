@@ -1,0 +1,11 @@
+Sử  dụng  hàm  select()/poll(), sys/socket.h và ngôn ngữ C,  viết  chương  trình chat_client và chat_server thực hiện các chức năng sau:
++ Chương trình server nhận kết nối từ các client.
++ Khi Client kết nối tới Server, client phải gửi tên của mình với đúng cú pháp: “client_id: client_name” trong đó client_name là tên của client và là xâu ký tự viết liền.
++ Khi đó Server mới chấp nhận kết nối của Client đó
++ Sau đó Server nhận message từ một client và gửi message đó đến các client còn lại.
+Ví dụ: 1 client có tên là “abc” gửi “xinchao” thì server sẽ nhận được "xinchao" và gửi cho các client khác sẽ  nhận được: “abc: xin chao”.
+
+viết chương trình soket gồm server và client sử dụng sys/socket.h và ngôn ngữ C: 
++ Chương trình server nhận kết nối từ các client.
++ Khi Client kết nối tới Server, client phải gửi tên của mình với đúng cú pháp: “client_id: client_name” trong đó client_name là tên của client và là xâu ký tự viết liền.
++ Gửi đúng cú pháp thì Server mới chấp nhận kết nối của Client đó
